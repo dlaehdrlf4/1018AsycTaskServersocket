@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="29dp"
+        android:background="#66a2f106"
+        android:text="스레드 상태"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/textView"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:max="100"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#10e445"
+            android:text="다운로드 시작"
+            android:id="@+id/start"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="다운로드 중지"
+            android:layout_weight="1"
+            android:background="#0d50ec"
+            android:id="@+id/end"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
